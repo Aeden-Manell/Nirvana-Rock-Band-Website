@@ -1,0 +1,446 @@
+/* Color Palette -
+
+color: #ffffff;
+color: #fee901;
+color: #0A0A09;
+*/
+
+/* Fonts -
+
+font-family: 'Caesar Dressing', system-ui;
+font-family: 'Frijole', system-ui;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caesar Dressing', system-ui;
+    flex-wrap: wrap;
+}
+
+.background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+nav {
+    position: fixed;
+    background-color: #000000;
+    color: #fee901;
+    width: 100%;
+    box-shadow: 0 1rem 1rem rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fee901;
+    padding: 8px 30px;
+    border-radius: 7px;
+    transition: all .3s ease;
+    font-size: 18px;
+}
+
+ul li a:hover,
+ul li a.active {
+    color: #000000;
+    background: #fee901;
+    transition-duration: 1s;
+}
+
+#icon {
+    background-color: #fee901;
+    padding:8px 10px 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#icon svg {
+    color: #000000;
+    height: 28px;
+    transition: all .3s ease;
+}
+
+#icon:hover {
+    background: #FFF;
+}
+
+#icon:hover svg {
+    color: #fee901;
+}
+
+#checkbox,
+#icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        border-bottom: 2px solid #fee901;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 71px);
+        background-color: #000000;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: none;
+        margin-top: 99px;
+    }
+
+    ul li {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #icon {
+        display: block;
+    }
+
+    #checkbox:checked~ul {
+        display: block;
+    }
+
+}
+
+.hero {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-hero{
+    border: 3px solid #ffea00;
+    padding: 20px 30px;
+    margin: 10px 15px;
+    border-radius: 50px;
+    background-color: #000000;
+}
+
+
+
+/* Footer Section */
+
+footer {
+    background-color: #000000;
+    border-top: 3px solid #fee901;
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding: 55px 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#author-text {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #fee901;
+}
+
+#author-text:hover {
+    font-size: 24px;
+    transition-duration: 1s;
+    color: #ffffff;
+}
+
+#copyright:hover {
+    font-size: 29px;
+    transition-duration: 1s;
+    color: #fee901;
+}
+
+/* discography-section */
+
+#discography-section{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 100px 20px;
+    border-bottom: #fee901 2px solid;
+}
+
+#discography-section h1{
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#discography-section h3{
+    font-size: 34px;
+    text-align: center;
+    padding-bottom: 70px;
+    color: #fee901;
+}
+
+.card img{
+    border: #000000 3px solid;
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 13px;
+}
+
+.container h2{
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 0 8px;
+
+  }
+  
+  .card {
+    margin: 9px;
+    padding: 5px;    
+    border: #fee901 3px solid;
+    border-radius: 18px;
+    background-color: #fee901;
+  }
+  
+  .container {
+    padding: 20px 16px;
+    background-color: #fee901;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+.album-button{
+    margin-top: 30px;
+    padding: 12px;
+    font-size: 26px;
+    border-radius: 10px;     
+    background-color: #000000;
+    color: #ffffff;    
+    border: #ffffff 3px solid;
+}
+
+.album-button:hover {
+    background-color: #fee901;
+    color: #000000;
+}
+
+.albumButton-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* biography-section */
+
+#biography-section{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 80px 40px;
+    border-bottom: #ffffff 4px solid;
+}
+
+#biography-section h2{
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#biography-section h3{
+    font-size: 34px;
+    text-align: center;
+    padding-bottom: 70px;
+    color: #fee901;
+}
+
+#biography-section h4{
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fee901;
+}
+
+.biography-text{
+    padding: 50px;
+}
+
+.biography-text p{
+    font-size: 24px;
+    padding-bottom: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.biography-img{
+    border: #fee901 0px solid;
+    border-radius: 10px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #fee901;
+    width: 40%; /* Adjust the width as per your requirement */
+    height: 30%; /* This will maintain the aspect ratio */
+}
+
+
+/* band-members-section */
+
+#band-members{
+    flex-wrap: wrap;
+    background-color: #fee901;
+    color: #000000;
+    padding: 80px 40px;
+    border-bottom: #ffffff 4px solid;
+}
+
+#band-members h2{
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #000000;
+}
+
+#band-members h3{
+    font-size: 34px;
+    text-align: center;
+    padding-bottom: 70px;
+    color: #ffffff;
+}
+
+#band-members .title{
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#band-members .container h2{
+    font-size: 52px;
+    color: #fee901;
+}
+
+#band-members .container{
+    background-color: #000000;
+    border-radius: 16px;
+
+}
+
+.timeline-img{
+    border-radius: 16px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 94%; 
+    height: auto; 
+}
+
+.band-members {
+    margin-top: 75px;
+}
+
+
+/* band-members-section */
+
+#upcoming-events{
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: #000000 2px solid;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.table-div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr, td, th{
+    border-radius: 11px;
+    background-color: #fee901;
+    padding: 30px;
+    color: #000000;
+    font-size: 33px;
+    padding-left: 30px;
+    padding-right: 30px;    
+    border: #000000 3px solid;
+}
+
+.table-button{
+    padding: 14px;
+    font-size: 22px;
+    border-radius: 10px;     
+    background-color: #000000;
+    color: #ffffff;    
+    border: #ffffff 3px solid;
+}
+
+.table-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#upcoming-events h2{
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fee901;
+}
+
+#upcoming-events h3{
+    font-size: 34px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #ffffff;
+}

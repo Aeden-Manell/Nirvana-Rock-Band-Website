@@ -1,0 +1,146 @@
+/* Color Palette -
+
+color: #ffffff;
+color: #fee901;
+color: #0A0A09;
+*/
+
+/* Fonts -
+
+font-family: 'Caesar Dressing', system-ui;
+font-family: 'Frijole', system-ui;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caesar Dressing', system-ui;
+    flex-wrap: wrap;
+    background-color: #000000;
+}
+
+/* Logo Header Section */
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.logo-div{
+    border-bottom: #fee901 4px solid;
+}
+
+/* Album Information Section */
+
+.album-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+
+    padding-top: 80px;
+}
+
+.album-information img{
+ border-radius: 25px;
+ border: #fee901 4px solid;
+
+}
+
+/* tracklist-section-section */
+
+#tracklist-section{
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: #000000 2px solid;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.table-div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr, td, th{
+    border-radius: 11px;
+    background-color: #fee901;
+    padding: 30px;
+    color: #000000;
+    font-size: 33px;
+    padding-left: 30px;
+    padding-right: 30px;    
+    border: #000000 3px solid;
+}
+
+.stream-button{
+    padding: 14px;
+    font-size: 22px;
+    border-radius: 10px;     
+    background-color: #329d00;
+    color: #ffffff;    
+    border: #ffffff 3px solid;
+}
+
+.stream-button:hover {
+    background-color: #ffffff;
+    color: #17c400;
+}
+
+#tracklist-section h2{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fee901;
+}
+
+#tracklist-section h3{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fee901;
+}
+
+#tracklist-section h4{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #000000;
+    border-top: 3px solid #fee901;
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding: 55px 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#author-text {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #fee901;
+}
+
+#author-text:hover {
+    font-size: 24px;
+    transition-duration: 1s;
+    color: #ffffff;
+}
+
+#copyright:hover {
+    font-size: 29px;
+    transition-duration: 1s;
+    color: #fee901;
+}
