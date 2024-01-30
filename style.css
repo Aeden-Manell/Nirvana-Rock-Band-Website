@@ -396,7 +396,7 @@ footer {
     color: #ffffff;
     border-bottom: #000000 2px solid;
     padding-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .table-div{
@@ -435,6 +435,7 @@ tr, td, th{
     font-size: 64px;
     text-align: center;
     padding-bottom: 10px;
+    padding-top: 20px;
     color: #fee901;
 }
 
@@ -444,3 +445,29 @@ tr, td, th{
     padding-bottom: 30px;
     color: #ffffff;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    #upcoming-events {
+      padding: 20px;
+    }
+  
+    .table-div {
+      overflow-x: auto;
+    }
+  
+    table {
+      width: 100%;
+    }
+  
+    th,
+    td {
+      padding: 10px;
+    }
+  
+    .table-button {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
