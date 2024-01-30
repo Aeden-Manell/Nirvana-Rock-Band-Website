@@ -11,14 +11,31 @@ font-family: 'Caesar Dressing', system-ui;
 font-family: 'Frijole', system-ui;
 */
 
+/* Use the 'border-box' box-sizing model, where the width and height 
+properties include padding and border, but not margin. This ensures 
+consistent sizing behavior. */
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Set the default font family to 'Caesar Dressing', with fallback to the system UI font stack. */
     font-family: 'Caesar Dressing', system-ui;
+    /* Enable wrapping of flex items when they don't all fit on a single line. 
+    This is useful for responsive layouts. */
     flex-wrap: wrap;
 }
+
+
+ /* Positions the video element absolutely, meaning 
+ it's removed from the normal document flow and positioned 
+ relative to its nearest positioned ancestor. */
+
+  /* Places the video behind other content on the page by 
+  setting a negative z-index. A higher z-index value indicates 
+  an element is closer to the "front" and will appear on top of 
+  elements with lower z-index values. */
 
 .background-video {
     position: absolute;
@@ -284,7 +301,7 @@ footer {
 #biography-section{
     background-color: #000000;
     color: #ffffff;
-    padding: 80px 40px;
+    padding: 60px 20px;
     border-bottom: #ffffff 4px solid;
 }
 
@@ -316,7 +333,6 @@ footer {
     font-size: 24px;
     padding-bottom: 40px;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 .biography-img{
@@ -338,7 +354,7 @@ footer {
     flex-wrap: wrap;
     background-color: #fee901;
     color: #000000;
-    padding: 80px 40px;
+    padding: 60px 30px;
     border-bottom: #ffffff 4px solid;
 }
 
